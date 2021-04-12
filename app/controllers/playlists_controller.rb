@@ -2,6 +2,12 @@ class PlaylistsController < ApplicationController
   def home
   end
 
-  def index
+  def monthly_playlist
+  end
+
+  def special_playlist
+  end
+
+  def submission
   end
 end

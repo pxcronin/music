@@ -20,28 +20,9 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .home-button-link {
     margin-left: 0 !important;
     justify-content: center;
   }
-}
-
-.fa-spotify {
-  background: #2ebd59;
-  border-radius: 500px;
-  color: #fff;
-  cursor: pointer;
-  margin: 0 10px 0 0;
-  min-width: 92px;
-  padding-bottom: 3px;
-  padding-top: 2px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.fa-spotify:hover {
-  background: #137731;
-  transition: .2s;
 }

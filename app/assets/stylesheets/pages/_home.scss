@@ -10,9 +10,38 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  h3 {
-    color: white;
+  .hero-text {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 250px 0;
+    align-items: center;
+    padding: 140px 0 0 0;
+    color: white;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-button-link {
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+}
+
+.fa-spotify {
+  background: #2ebd59;
+  border-radius: 500px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  min-width: 92px;
+  padding-bottom: 3px;
+  padding-top: 2px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.fa-spotify:hover {
+  background: #137731;
+  transition: .2s;
 }

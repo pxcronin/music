@@ -6,8 +6,12 @@
   outline: none;
 }
 
+.active, .year:hover {
+  background-color:rgba($color: #e6c99f, $alpha: 1);
+}
+
 .active, .collapsible:hover {
-  background-color:rgba($color: #F8F2E9, $alpha: .2);
+  background-color:rgba($color: #e6c99f, $alpha: 1);
 }
 
 .playlist {
@@ -15,4 +19,14 @@
   display: none;
   overflow: hidden;
   // background-color: #f1f1f1;
+}
+
+.year {
+  background-color: #F8F2E9;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  margin: 16px 0;
 }

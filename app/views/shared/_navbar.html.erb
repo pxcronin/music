@@ -1,16 +1,26 @@
 <nav class="navbar transparent navbar-expand-lg navbar-light">
-  <div class="container-fluid justify-content-between">
-    <div class="site-links">
-      <a class="navbar-brand" href="/">Home</a>
-      <a class="navbar-brand" href="/playlists/monthly_playlist">Monthly Playlists</a>
-      <a class="navbar-brand" href="/playlists/special_playlist">Themed Playlists</a>
-      <a class="navbar-brand" href="/playlists/submission">Submissions</a>
-      <a href="https://open.spotify.com/user/1210778120?si=3e41651dcec34dba" target="_blank"><i class="fab fa-spotify"> Follow</i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse site-links" id="navbar-links">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="navbar-brand" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="/playlists/monthly_playlist">Monthly Playlists</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="/playlists/special_playlist">Themed Playlists</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="/playlists/submission">Submissions</a>
+        </li>
+        <% unless current_page?(root_path) %>
+        <li class="nav-item">
+          <a href="https://open.spotify.com/user/1210778120?si=3e41651dcec34dba" target="_blank"><i class="fab fa-spotify"> Follow</i></a>
+        </li>
+        <% end %>
+      </ul>
     </div>
-    <div class="burger menu">
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
 </nav>
